@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+$font-color:#222222;
+$footer-bg-color:#3f3f3f;
+$footer-content-color:#d5d5d5;
+$small-screen:576px;
+$medium-screen:768px;
+$large-screen:992px;
+$xl-screen:1200px;
+//Social media icons colors:
+$fb-color: #3b5998;
+$tw-color:#00aced;
+$is-color:#9b6954;
+$yt-color:#bb0000;
+@mixin large-screen {
+    @media(max-width: #{$large-screen}) {
+        @content;
+    }
+}
+
+@mixin medium-screen {
+    @media(max-width: #{$medium-screen}) {
+        @content;
+    }
+}
+
+@mixin small-screen {
+    @media(max-width: #{$small-screen}) {
+        @content;
+    }
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    color: $font-color;
+}
+
+.navbar {
+    padding: .8rem;
+}
+
+.navbar-nav li {
+    padding-right: 20px;
+}
+
+.nav-link {
+    font-size: 1.1em;
+}
+
+.carousel-inner img {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-40%);
+    @include medium-screen {
+        top: 45%;
+        transform: translateY(-10%);
+    }
+    @include small-screen {
+        top: 40%;
+        transform: translateY(-10%);
+    }
+}
+
+.carousel-caption h1 {
+    font-size: 500%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px black;
+    @include medium-screen {
+        font-size: 350%;
+    }
+    @include small-screen {
+        font-size: 250%;
+    }
+}
+
+.carousel-caption h3 {
+    font-size: 200%;
+    font-weight: 500;
+    text-shadow: 1px 1px 10px black;
+    padding-bottom: 1rem;
+    @include medium-screen {
+        font-size: 140%;
+        font-weight: 400;
+        padding-bottom: 0.2rem;
+    }
+    @include small-screen {
+        font-size: 110%;
+        font-weight: 300;
+        padding-bottom: 0.1rem;
+    }
+}
+
+.carousel-caption .btn {
+    @include medium-screen {
+        font-size: 95%;
+        padding: 8px 14px;
+    }
+    @include small-screen {
+        font-size: 90%;
+        padding: 4px 8px;
+    }
+}
+
+.carousel-indicators {
+    @include small-screen {
+        display: none;
+    }
+}
+
+.jumbotron {
+    padding: 1rem;
+    border: 0;
+}
+
+.padding {
+    padding-bottom: 2rem;
+}
+
+.tech {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.tech hr {
+    border-top: 2px solid #b4b4b4;
+    width: 95%;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.display-4 {
+    @include medium-screen {
+        font-size: 200%;
+    }
+}
+
+.fa-code {
+    color: #e54d26;
+}
+
+.fa-bold {
+    color: #563d7c;
+}
+
+.fa-css3 {
+    color: #2163af;
+}
+
+.fa-code,
+.fa-bold,
+.fa-css3 {
+    font-size: 4em;
+    margin: 1rem;
+}
+
+.social a {
+    font-size: 4.5rem;
+    padding: 3rem;
+    @include large-screen {
+        font-size: 4em;
+        padding: 2rem;
+    }
+    @include medium-screen {
+        font-size: 2.5em;
+        padding: 1.2rem;
+    }
+}
+
+.fa-facebook {
+    color: $fb-color;
+    &:hover {
+        color: darken($fb-color, 20%);
+    }
+}
+
+.fa-twitter {
+    color: $tw-color;
+    &:hover {
+        color: darken($tw-color, 20%);
+    }
+}
+
+.fa-instagram {
+    color: $is-color;
+    &:hover {
+        color: darken($is-color, 20%);
+    }
+}
+
+.fa-youtube {
+    color: $yt-color;
+    &:hover {
+        color: darken($yt-color, 20%);
+    }
+}
+
+footer {
+    background-color: $footer-bg-color;
+    color: $footer-content-color;
+    padding-top: 2rem;
+}
+
+hr.light {
+    border-top: 1px solid $footer-content-color;
+    width: 75%;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+hr.light-100 {
+    @extend hr.light;
+    width: 100%;
+}

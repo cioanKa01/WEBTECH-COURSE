@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="myStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>BoostrapDemo</title>
+
+
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top ">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="" width="75px"></a>
+            <!--Hamburger icon-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-targets="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Actual navigation menu-->
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropDown" data-toggle="dropdown">Products</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Websites</a>
+                            <a class="dropdown-item" href="#">Web Hosting</a>
+                            <a class="dropdown-item" href="#">E-mail services</a>
+                            <a class="dropdown-item" href="#">Customer Support</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="#">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Customer Supports</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Image slider-->
+    <div id="slides" class="carousel slide" data-ride="carousel">
+        <!--Carousel indicators-->
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+        </ul>
+        <!--Images-->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/bg_1.png" />
+                <!--Text atop of image-->
+                <div class="carousel-caption">
+                    <h1 class="display-2">RZV Design</h1>
+                    <h3>Complete Website Solutions</h3>
+                    <button type="button" class="btn btn-outline-light btn-lg">Demo website</button>
+                    <button type="button" class="btn btn-primary btn-lg">Learn more</button>
+
+                </div>
+
+            </div>
+            <div class="carousel-item"><img src="img/bg_2.png" /></div>
+            <div class="carousel-item"><img src="img/bg_3.png" /></div>
+
+        </div>
+    </div>
+
+    <!--jUMBOTRON-->
+    <div class="container-fluid">
+        <div class="row jumbotron">
+            <div class="col-xs-12 col-sm-12 col-xl-10">
+                <p class="lead">We are the best!</p>
+                <p class="text-muted">You get the best services available at the moment , so it's going to cost a lot
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-xl-2">
+                <a href="#">
+                    <button type="buton" class="btn btn-outline-secondary btn-lg">
+                        Our honest pricings
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--Technologies-->
+
+    <div class="container-fluid padding">
+        <div class="row tech text-center">
+            <div class="col-12">
+                <h1 class="display-4">Technologies used</h1>
+            </div>
+            <hr />
+            <div class="col-12">
+                <p class="lead">
+                    Our design process uses technologies from the future , not available to common peasants , so that your company stays ahead in the market , for the right price of course :)
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Technologies 3 column -->
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fa fa-code"></i>
+                <h3>HTML5</h3>
+                <p>We use the latest version of HTML.</p>
+
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 ">
+                <i class="fa fa-bold"></i>
+                <h3>Bootstrap</h3>
+                <p>We use the lastest version of Bootstrap</p>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <i class="fa fa-css3"></i>
+                <h3>CSS4</h3>
+                <p>We use the latest version of CSS</p>
+            </div>
+            <hr class="my-4" />
+        </div>
+
+        <!--Meet the team-->
+        <div class="container-fluid padding">
+            <div class="row tech text-center">
+                <div class="col-12">
+                    <h1 class="display-4">Meet the Team</h1>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Team Cards-->
+        <div class="container-fluid padding">
+            <div class="row padding">
+                <div class="col-md-4 d-flex align-items-stretch">
+                    <div class="card">
+                        <img class="card-img-top" src="img/team1.jpg" />
+                        <div class="card-body">
+                            <h4 class="card-title">Samuel Smith</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptatem quaerat, doloribus perspiciatis officia praesentium ipsam repellendus omnis asperiores mollitia.
+                            </p>
+                            <a href="#" class="btn btn-outline-secondary">See profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex align-items-stretch">
+                    <div class="card">
+                        <img class="card-img-top" src="img/team2.jpg" />
+                        <div class="card-body">
+                            <h4 class="card-title">Jonathan Smith</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, optio? Iste, natus! Autem, nostrum nobis et assumenda fugit maxime minima?
+                            </p>
+                            <a href="#" class="btn btn-outline-secondary">See profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex align-items-stretch">
+                    <div class="card">
+                        <img class="card-img-top" src="img/team3.jpg" />
+                        <div class="card-body">
+                            <h4 class="card-title">Jennifer Matthews</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, deserunt. Sapiente voluptas quis repellat rerum labore. Ratione aperiam maiores quis!
+                            </p>
+                            <a href="#" class="btn btn-outline-secondary">See profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Social Media-->
+        <div class="container-fluid padding">
+            <div class="row text-center padding">
+                <div class="col-12">
+                    <h2>Connect</h2>
+                </div>
+                <div class="col-12 social padding ">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+
+        <footer>
+            <div class="container-fluid padding">
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <hr class="light" />
+                        <h5>Contact Us</h5>
+                        <hr class="light" />
+                        <p>0264.401485</p>
+                        <p>28 G. Baritiu street</p>
+                        <p>Cluj-Napoca,RO</p>
+                    </div>
+                    <div class="col-md-4">
+                        <hr class="light" />
+                        <h5>Office Hours</h5>
+                        <hr class="light" />
+                        <p>Mon-Fri : 9:00 - 17:00</p>
+                        <p>Sat : 9:00 - 13:00</p>
+                        <p>Sun : Closed</p>
+                    </div>
+                    <div class="col-md-4">
+                        <hr class="light" />
+                        <h5>Regional Offices</h5>
+                        <hr class="light" />
+                        <p>Tg.Mures , RO</p>
+                        <p>Iasi , RO</p>
+                        <p>Timisoara,RO</p>
+                    </div>
+                    <div class="col-12">
+                        <hr class="light-100" />
+                        <h5>&copy; RZV Design, 2019</h5>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+</body>
+
+</html>
